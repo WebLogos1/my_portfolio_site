@@ -1,6 +1,15 @@
-h1{
+h1 {
     color: blueviolet;
-}
-body{
+  }
+  
+  body {
     background-color: gainsboro;
-}
+    margin: 0;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    font-family: Scope One, Arial, Helvetica, sans-serif;
+  }
+  
