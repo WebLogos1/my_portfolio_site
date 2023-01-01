@@ -12,6 +12,18 @@ h1 {
   *::after {
     font-family: Scope One, Arial, Helvetica, sans-serif;
   }
+  .video-section{
+display: grid;
+grid-template-columns: repeat(auto-fill minmax(250px, 1fr));
+gap: 3rem 1rem;
+padding: 3rem 0;
+margin: 0 1.5rem;
+border-top: 4px solid #ccc;
+  }
+  .video-section:first-child{
+    border-top: none;
+  }
+
   .video-container{
 display: flex;
 flex-direction: column;
@@ -23,4 +35,22 @@ flex-direction: column;
   }
   .thumbnail::before{
     content: attr(data-duration);
+    position: absolute;
+    background-color: black;
+    color: aliceblue;
+    right: 5px;
+    bottom: 5px;
+    padding: .1em .3em;
+    border-radius: .3em;
+    font-size: .9rem;
+
   }
+  .thumbnail-image{
+    width: 100%;
+    height: 100%;
+    min-width: 250px;
+    min-height: 150px;
+    background-color: #aaa;
+
+  }
+  
