@@ -12,4 +12,15 @@ h1 {
   *::after {
     font-family: Scope One, Arial, Helvetica, sans-serif;
   }
-  
+  .video-container{
+display: flex;
+flex-direction: column;
+  }
+
+  .thumbnail{
+    position: relative;
+    display: flex;
+  }
+  .thumbnail::before{
+    content: attr(data-duration);
+  }
